@@ -1,0 +1,135 @@
+// Home
+
+.promo {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  color: #ffffff;
+  background: url(../img/promo-bg.jpg) no-repeat center;
+  background-size: cover;
+
+  .auth-title {
+    margin-bottom: 24px;
+    padding-bottom: 16px;;
+    font-size: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, .5);
+  }
+
+  .auth-desc {
+    margin-bottom: 35px;
+    font-size: 16px;
+  }
+
+  .recommended {
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, .5);
+
+    &-title {
+      margin-bottom: 30px;
+      font-size: 20px;
+    }
+
+    &-list {
+      justify-content: space-between;
+
+      a {
+        display: block;
+        margin-bottom: 14px;
+        color: #ffffff;
+      }
+    }
+  }
+}
+
+// Популярные услуги
+.popular-section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  &-title {
+    margin-bottom: 60px;
+  }
+
+  hr {
+    margin-top: 0;
+    margin-bottom: 40px;
+  }
+}
+
+.popular-service-list {
+  .service-list-item {
+    margin-bottom: 50px;
+    padding-right: 20px;
+  }
+
+  .service-item-icon {
+    margin-right: 30px;
+  }
+}
+
+.service-list-item {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  .service-item-title {
+    font-size: 16px;
+  }
+
+  .service-item-icon {
+    flex-shrink: 0;
+  }
+}
+
+// About section
+.about-section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  font-size: 16px;
+  color: #ffffff;
+  background-color: $primary;
+
+  &-title {
+    margin-bottom: 50px;
+    font-size: 36px;
+  }
+
+  &-list {
+    margin-top: 20px;
+    padding-left: 18px;
+
+    li {
+      margin-bottom: 5px;
+    }
+  }
+
+  .statistics {
+    padding-left: 50px;
+
+    &-title {
+      margin-bottom: 30px;
+      font-weight: 600;
+    }
+
+    &-item {
+      display: flex;
+      flex-wrap: nowrap;
+
+      &-icon {
+        flex-shrink: 0;
+        margin-right: 20px;
+      }
+
+      &-title {
+        line-height: 1;
+      }
+
+      &-desc {
+        font-size: 14px;
+      }
+    }
+  }
+}

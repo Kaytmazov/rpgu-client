@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Каталог услуг | РПГУ - Региональный Портал Государственных Услуг</title>
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+  <!--================ Header =================-->
+  @@include('partials/_header.html', {
+    "catalog": "active",
+    "oiv": ""
+  })
+  <!--================ /Header =================-->
+  <main>
+    <nav class="breadcrumb-wrapper" aria-label="breadcrumb">
+      <div class="container">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+          <li class="breadcrumb-item active" aria-current="page"><span>Каталог услуг</span></li>
+        </ol>
+      </div>
+    </nav>
+
+    <div class="container">
+
+      <h1 class="page-title">Каталог услуг</h1>
+
+      <div class="search-wrapper">
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="Введите название услуги" aria-label="Поиск услуг" aria-describedby="button-addon2">
+          <div class="input-group-append">
+            <button class="btn btn-primary" type="button" id="button-addon2">
+              <svg width="20" height="20"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-search"></use></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="row catalog-list">
+        <div class="col-md-6 col-lg-4">
+          <div class="catalog-list-item">
+            <a class="catalog-item-header" href="catalog-item.html">
+              <svg class="catalog-item-icon" width="64" height="70"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#3"></use></svg>
+              <span class="catalog-item-title">Семья и дети</span>
+            </a>
+            <div class="catalog-item-services">
+              <a href="service.html">Регистрация брака,</a>
+              <a href="service.html">Регистрация рождения,</a>
+              <a href="service.html">Распоряжение материнским капиталом,</a>
+              <a href="service.html">Создание семьи,</a>
+              <a href="service.html">Рождение ребёнка</a>
+              <a href="service.html">Еще...</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="catalog-list-item">
+            <a class="catalog-item-header" href="catalog-item.html">
+              <svg class="catalog-item-icon" width="64" height="70"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#7"></use></svg>
+              <span class="catalog-item-title">Паспорта, регистрации, визы</span>
+            </a>
+            <div class="catalog-item-services">
+              <a href="service.html">Паспорт гражданина РФ,</a>
+              <a href="service.html">Заграничный паспорт нового образца,</a>
+              <a href="service.html">Регистрация граждан,</a>
+              <a href="service.html">Ваши документы утеряны или украдены,?</a>
+              <a href="service.html">Создание семьи</a>
+              <a href="service.html">Еще...</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="catalog-list-item">
+            <a class="catalog-item-header" href="catalog-item.html">
+              <svg class="catalog-item-icon" width="64" height="70"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#11"></use></svg>
+              <span class="catalog-item-title">Транспорт и вождение</span>
+            </a>
+            <div class="catalog-item-services">
+              <a href="service.html">Автомобильные и дорожные штрафы,</a>
+              <a href="service.html">Водительское удостоверение,</a>
+              <a href="service.html">Регистрация транспортного средства,</a>
+              <a href="service.html">Покупка и оформление автомобиля,</a>
+              <a href="service.html">Продажа автомобиля салону или частному лицу,</a>
+              <a href="service.html">Содержание автомобиля</a>
+              <a href="service.html">Еще...</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="catalog-list-item">
+            <a class="catalog-item-header" href="catalog-item.html">
+              <svg class="catalog-item-icon" width="64" height="70"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#69"></use></svg>
+              <span class="catalog-item-title">Образование</span>
+            </a>
+            <div class="catalog-item-services">
+              <a href="service.html">Запись в детский сад,</a>
+              <a href="service.html">Предоставление предварительных результатов ЕГЭ,</a>
+              <a href="service.html">Признание иностранных документов об образовании,</a>
+              <a href="service.html">Получение образования,</a>
+              <a href="service.html">Рождение ребёнка</a>
+              <a href="service.html">Еще...</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="catalog-list-item">
+            <a class="catalog-item-header" href="catalog-item.html">
+              <svg class="catalog-item-icon" width="64" height="70"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#16"></use></svg>
+              <span class="catalog-item-title">Налоги и финансы</span>
+            </a>
+            <div class="catalog-item-services">
+              <a href="service.html">Налоговая задолженность,</a>
+              <a href="service.html">Налоговый учет физических лиц,</a>
+              <a href="service.html">Прием налоговых деклараций (расчетов),</a>
+              <a href="service.html">Как открыть своё дело,</a>
+              <a href="service.html">Имущественный налоговый вычет</a>
+              <a href="service.html">Еще...</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="catalog-list-item">
+            <a class="catalog-item-header" href="catalog-item.html">
+              <svg class="catalog-item-icon" width="64" height="70"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#22"></use></svg>
+              <span class="catalog-item-title">Моё здоровье</span>
+            </a>
+            <div class="catalog-item-services">
+              <a href="service.html">Сведения о прикреплении к медицинской организации,</a>
+              <a href="service.html">Аттестация медицинских работников и фармацевтов,</a>
+              <a href="service.html">Сведения об оказанных медицинских услугах и их стоимости,</a>
+              <a href="service.html">Рождение ребёнка,</a>
+              <a href="service.html">Инвалидность</a>
+              <a href="service.html">Еще...</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="catalog-list-item">
+            <a class="catalog-item-header" href="catalog-item.html">
+              <svg class="catalog-item-icon" width="64" height="70"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#29"></use></svg>
+              <span class="catalog-item-title">Пенсия, пособия и льготы</span>
+            </a>
+            <div class="catalog-item-services">
+              <a href="service.html">Извещение о состоянии лицевого счета в ПФР,</a>
+              <a href="service.html">Установление пенсии,</a>
+              <a href="service.html">Выписка о предоставлении социальной помощи,</a>
+              <a href="service.html">Пособия, выплаты и льготы семьям, имеющим детей,</a>
+              <a href="service.html">Помощь пенсионерам</a>
+              <a href="service.html">Еще...</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="catalog-list-item">
+            <a class="catalog-item-header" href="catalog-item.html">
+              <svg class="catalog-item-icon" width="64" height="70"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#31"></use></svg>
+              <span class="catalog-item-title">Лицензии, справки, аккредитации</span>
+            </a>
+            <div class="catalog-item-services">
+              <a href="service.html">Справка об отсутствии судимости,</a>
+              <a href="service.html">Архивные справки МВД,</a>
+              <a href="service.html">Справка об административном наказании за потребление наркотических средств без назначения врача,</a>
+              <a href="service.html">Ваши документы утеряны или украдены?,</a>
+              <a href="service.html">Поиск работы и трудоустройство</a>
+              <a href="service.html">Еще...</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="catalog-list-item">
+            <a class="catalog-item-header" href="catalog-item.html">
+              <svg class="catalog-item-icon" width="64" height="70"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#35"></use></svg>
+              <span class="catalog-item-title">Квартира, строительство и земля</span>
+            </a>
+            <div class="catalog-item-services">
+              <a href="service.html">Оплата ЖКХ,</a>
+              <a href="service.html">Разрешение на строительство,</a>
+              <a href="service.html">Смена категории жилья,</a>
+              <a href="service.html">Приобретение жилой недвижимости,</a>
+              <a href="service.html">Помощь пенсионерам</a>
+              <a href="service.html">Еще...</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!--================ Footer =================-->
+  @@include('partials/_footer.html')
+  <!--================ /Footer =================-->
+
+  <script src="libs/jquery-3.4.1.slim.min.js"></script>
+  <script src="libs/bootstrap.bundle.min.js"></script>
+  <script src="js/scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+// Каталог услуг
+.search-wrapper {
+  margin-bottom: 60px;
+  padding: 10px;
+  background-color: #bfe5ff;
+}
+
+.catalog-list {
+  padding-bottom: 50px;
+
+  &-item {
+    margin-bottom: 60px;
+    padding-right: 30px;
+  }
+}
+
+.catalog-item-header {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  margin-bottom: 22px;
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  .catalog-item-title {
+    font-size: 22px;
+    line-height: 1.2;
+  }
+
+  .catalog-item-icon {
+    flex-shrink: 0;
+    margin-right: 20px;
+  }
+}
+
+.catalog-item-services {
+  a {
+    font-size: 16px;
+    font-weight: 300;
+
+    &:last-of-type {
+      display: block;
+    }
+  }
+}
+
+.service-list {
+  padding-left: 0;
+  padding-bottom: 50px;
+  list-style: none;
+
+  li {
+    margin-bottom: 22px;
+  }
+
+  &-item {
+    display: inline-flex;
+  }
+
+  .service-item-icon {
+    margin-right: 20px;
+  }
+}

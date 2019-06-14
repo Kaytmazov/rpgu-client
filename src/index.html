@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>РПГУ - Региональный Портал Государственных Услуг</title>
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+  <!--================ Header =================-->
+  @@include('partials/_header.html', {
+    "catalog": "",
+    "oiv": ""
+  })
+  <!--================ /Header =================-->
+  <main>
+    <section class="promo">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-9 pr-5">
+            <div class="input-group mb-5">
+              <input type="text" class="form-control" placeholder="Введите название услуги" aria-label="Поиск услуг" aria-describedby="button-addon2">
+              <div class="input-group-append">
+                <button class="btn btn-primary" type="button" id="button-addon2">
+                  <svg width="20" height="20"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-search"></use></svg>
+                </button>
+              </div>
+            </div>
+            <div class="recommended">
+              <h5 class="recommended-title">Рекомендуем для жителей Республики Дагестан</h5>
+              <div class="recommended-list row">
+                <div class="col-auto">
+                  <a href="#">Проверка штрафов</a>
+                  <a href="#">Справка об отсутствии судимости</a>
+                </div>
+                <div class="col-auto">
+                  <a href="#">Получение загранпаспорта</a>
+                  <a href="#">Запись к врачу</a>
+                </div>
+                <div class="col-auto">
+                  <a href="#">Родители и дети</a>
+                  <a href="#">Восстановление документов</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <h4 class="auth-title">Вход в госуслуги</h4>
+            <p class="auth-desc">Войдите или зарегистрируйтесь, чтобы получить полный доступ к электронным госуслугам</p>
+            <a class="btn btn-light btn-block mb-3" href="#">Войти</a>
+            <a class="btn btn-primary btn-block mb-3" href="#">Зарегистрироваться</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="popular-section">
+      <div class="container">
+        <h2 class="popular-section-title">Популярное на портале</h2>
+        <div class="row popular-service-list">
+          <div class="col-md-6 col-lg-4">
+            <a class="service-list-item" href="service.html">
+              <svg class="service-item-icon" width="64" height="70"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#16"></use></svg>
+              <span class="service-item-title">Налоговая задолженность</span>
+            </a>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <a class="service-list-item" href="service.html">
+              <svg class="service-item-icon" width="64" height="70"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#68"></use></svg>
+              <span class="service-item-title">Судебная задолженность</span>
+            </a>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <a class="service-list-item" href="service.html">
+              <svg class="service-item-icon" width="64" height="70"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#7"></use></svg>
+              <span class="service-item-title">Выдача или замена паспорта гражданина РФ</span>
+            </a>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <a class="service-list-item" href="service.html">
+              <svg class="service-item-icon" width="64" height="70"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#10"></use></svg>
+              <span class="service-item-title">Автомобильные и дорожные штрафы</span>
+            </a>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <a class="service-list-item" href="service.html">
+              <svg class="service-item-icon" width="64" height="70"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#12"></use></svg>
+              <span class="service-item-title">Получение права на управление транспортным средством</span>
+            </a>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <a class="service-list-item" href="service.html">
+              <svg class="service-item-icon" width="64" height="70"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#13"></use></svg>
+              <span class="service-item-title">Запись в детский сад</span>
+            </a>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <a class="service-list-item" href="service.html">
+              <svg class="service-item-icon" width="64" height="70"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#9"></use></svg>
+              <span class="service-item-title">Регистрация по месту жительства или пребывания</span>
+            </a>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <a class="service-list-item" href="service.html">
+              <svg class="service-item-icon" width="64" height="70"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#11"></use></svg>
+              <span class="service-item-title">Регистрация транспортного средства</span>
+            </a>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <a class="service-list-item" href="service.html">
+              <svg class="service-item-icon" width="64" height="70"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#8"></use></svg>
+              <span class="service-item-title">Оформление загранпаспорта гражданина РФ</span>
+            </a>
+          </div>
+        </div>
+        <hr>
+        <div class="text-center">
+          <a class="btn btn-primary" href="catalog.html">Все услуги</a>
+        </div>
+      </div>
+    </section>
+    <section class="about-section">
+      <div class="container">
+        <h1 class="about-section-title">Портал муниципальных услуг Республики Дагестан</h1>
+        <div class="row">
+          <div class="col-md-6">
+            <p>РПГУ – Региональный портал государственных услуг и функций (ЕПГУ), где у каждого гражданина есть возможность:</p>
+            <ul class="about-section-list">
+              <li>узнать информацию о государственных и муниципальных услугах;</li>
+              <li>заказать госуслуги в электронной форме;</li>
+              <li>записаться на приём в ведомство;</li>
+              <li>оплатить любым электронным способом штрафы Госавтоинспекции, судебные и налоговые задолженности, госпошлины, услуги ЖКХ;</li>
+            </ul>
+          </div>
+          <div class="statistics col-md-6">
+            <h5 class="statistics-title">Статистика портала за 2019 год:</h5>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="statistics-item">
+                  <svg class="statistics-item-icon" width="26" height="32"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-service"></use></svg>
+                  <div>
+                    <h3 class="statistics-item-title">2,5 млн</h3>
+                    <p class="statistics-item-desc">услуг заказано через сайт Госуслуг и мобильное приложение</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="statistics-item">
+                  <svg class="statistics-item-icon" width="26" height="32"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-user"></use></svg>
+                  <div>
+                    <h3 class="statistics-item-title">820 тыс</h3>
+                    <p class="statistics-item-desc">зарегистрированных пользователей</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!--================ Footer =================-->
+  @@include('partials/_footer.html')
+  <!--================ /Footer =================-->
+
+  <script src="libs/jquery-3.4.1.slim.min.js"></script>
+  <script src="libs/bootstrap.bundle.min.js"></script>
+  <script src="js/scripts.js"></script>
+</body>
+</html>

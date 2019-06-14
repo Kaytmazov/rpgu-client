@@ -1,0 +1,51 @@
+// Header
+
+.topbar {
+  color: #fff;
+  background-color: $topbarBg;
+
+  &-left {
+    margin-left: -20px;
+  }
+
+  &-right {
+    margin-right: -20px;
+  }
+
+  .btn-link {
+    height: 50px;
+    padding: 0 20px;
+    color: #fff;
+    border-radius: 0;
+
+    &:hover,
+    &:focus {
+      text-decoration: none;
+      background-color: $dropdown-bg;
+    }
+  }
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+
+  .navbar-collapse {
+    margin-left: 180px;
+  }
+
+  .nav-item {
+    & + .nav-item {
+      margin-left: 25px;
+    }
+
+    &.active > .nav-link {
+      color: #000;
+    }
+  }
+
+  .nav-link {
+    font-size: 16px;
+  }
+}
