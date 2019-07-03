@@ -6,11 +6,16 @@ $h4-font-size:              22px;
 $h5-font-size:              18px;
 $h6-font-size:              15px;
 
+$headings-color:          #333;
+
 $body-color:              #535B63;
+$link-color:              #0173c1;
 
 $primary:                 #0063b0;
 $topbarBg:                #1e3685;
 $footerBg:                #e6ebec;
+
+$text-muted:              #a5aeb3;
 
 
 $navbar-padding-y:          10px;
@@ -33,5 +38,12 @@ $dropdown-link-active-bg:           $dropdown-link-hover-bg;
 $input-btn-font-size:               16px;
 $input-btn-padding-y:               14px;
 $input-btn-padding-x:               25px;
+$input-height-inner-quarter:        10px;
+$input-height-inner-half:           20px;
 $custom-select-indicator-padding:   15px;
+$form-group-margin-bottom:          12px;
 
+$nav-tabs-border-radius:            0;
+$nav-tabs-border-color:           #cdd1d4;
+$nav-tabs-link-active-border-color: $nav-tabs-border-color $nav-tabs-border-color transparent;
+$nav-tabs-link-hover-border-color:  transparent transparent $nav-tabs-border-color;

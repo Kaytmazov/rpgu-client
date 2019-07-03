@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Регистрация рождения | РПГУ - Региональный Портал Государственных Услуг</title>
+  <!-- Styles -->
+  <link rel="stylesheet" href="libs/flatpickr/flatpickr.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+  <!--================ Header =================-->
+  @@include('partials/_header.html', {
+    "catalog": "active",
+    "organizations": ""
+  })
+  <!--================ /Header =================-->
+
+  <nav class="breadcrumb-wrapper" aria-label="breadcrumb">
+    <div class="container">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+        <li class="breadcrumb-item"><a href="catalog.html">Каталог услуг</a></li>
+        <li class="breadcrumb-item"><a href="catalog-item.html">Семья и дети</a></li>
+        <li class="breadcrumb-item active" aria-current="page"><span>Регистрация рождения</span></li>
+      </ol>
+    </div>
+  </nav>
+
+  <main class="main-content">
+
+    <div class="container">
+
+      <h1 class="page-title">
+        <svg class="mr-3" width="70" height="70"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#2"></use></svg>
+        Регистрация рождения
+      </h1>
+      <hr>
+
+      <div class="row">
+        <div class="col-lg-11">
+          <form class="needs-validation" novalidate>
+            <h2 class="font-weight-light my-5">Данные отца</h2>
+            <hr>
+
+            <fieldset class="my-5">
+              <div class="row align-items-center mb-5">
+                <div class="col-lg-1">
+                  <span class="h1 font-weight-light">1</span>
+                </div>
+                <div class="col-lg-10">
+                  <legend class="mb-0">Ваши персональные данные</legend>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-10 offset-lg-1">
+                  <div class="form-row">
+                    <div class="form-group col-sm-6 col-md-4">
+                      <div class="custom-field">
+                        <input class="custom-input form-control has-value" id="fatherSurname" type="text" name="fatherSurname" value="Кайтмазов" pattern=".*\S.*" required disabled>
+                        <label class="custom-label" for="fatherSurname">Фамилия</label>
+                        <div class="invalid-tooltip">Поле обязательно для заполнения</div>
+                      </div>
+                    </div>
+                    <div class="form-group col-sm-6 col-md-4">
+                      <div class="custom-field">
+                        <input class="custom-input form-control has-value" id="fatherName" type="text" name="fatherName" value="Шамиль" pattern=".*\S.*" required disabled>
+                        <label class="custom-label" for="fatherName">Имя</label>
+                        <div class="invalid-tooltip">Поле обязательно для заполнения</div>
+                      </div>
+                    </div>
+                    <div class="form-group col-sm col-md-4">
+                      <div class="custom-field">
+                        <input class="custom-input form-control" id="fatherMiddlename" type="text" name="fatherMiddlename">
+                        <label class="custom-label" for="fatherMiddlename">Отчество</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-row">
+                    <div class="form-group col-sm-6 col-md-3">
+                      <div class="custom-field">
+                        <input class="custom-input form-control" id="fatherDateBirth" type="text" name="fatherDateBirth" data-mask="date" autocomplete="off" required>
+                        <label class="custom-label" for="fatherDateBirth">Дата рождения</label>
+                        <div class="invalid-tooltip">Поле обязательно для заполнения</div>
+                      </div>
+                    </div>
+                    <div class="form-group col-sm-6 col-md-5 gender-radios">
+                      <div class="radio ml-4">
+                        <input id="fatherGenderMan" type="radio" name="fatherGender" checked>
+                        <label for="fatherGenderMan">
+                          <svg width="22" height="35"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-gender-man"></use></svg>
+                          Мужской
+                        </label>
+                      </div>
+                      <div class="radio">
+                        <input id="fatherGenderWoman" type="radio" name="fatherGender">
+                        <label for="fatherGenderWoman">
+                          <svg width="22" height="35"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-gender-woman"></use></svg>
+                          Женский
+                        </label>
+                      </div>
+                    </div>
+                    <div class="form-group col-sm-6 col-md-4">
+                      <div class="custom-field">
+                        <input class="custom-input form-control" id="fatherSNILS" type="text" name="fatherSNILS" data-mask="snils" pattern="[0-9]{3}[\-][0-9]{3}[\-][0-9]{3} [0-9]{2}" required>
+                        <label class="custom-label" for="fatherSNILS">СНИЛС</label>
+                        <div class="invalid-tooltip">Поле обязательно для заполнения</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-row">
+                    <div class="form-group col-sm-6">
+                      <div class="custom-field">
+                        <input class="custom-input form-control" id="fatherEmail" type="email" name="fatherEmail">
+                        <label class="custom-label" for="fatherEmail">Адрес электронной почты</label>
+                        <div class="invalid-tooltip">Введите корректный адрес</div>
+                      </div>
+                    </div>
+                    <div class="form-group col-sm-6 col-md-4">
+                      <div class="custom-field">
+                        <input class="custom-input form-control" id="fatherTel" type="tel" name="fatherTel" data-mask="tel" pattern="[\+]7 \([0-9]{3}\) [0-9]{3}[\-][0-9]{2}[\-][0-9]{2}">
+                        <label class="custom-label" for="fatherTel">Контактный телефон</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </fieldset>
+            <hr>
+            <fieldset class="my-5">
+              <div class="row align-items-center mb-5">
+                <div class="col-lg-1">
+                  <span class="h1 font-weight-light">2</span>
+                </div>
+                <div class="col-lg-10">
+                  <legend class="mb-0">Документ, удостоверяющий личность</legend>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-10 offset-lg-1">
+                  <div class="form-row">
+                    <div class="form-group col-sm-6 col-md-2">
+                      <div class="custom-field">
+                        <input class="custom-input form-control" id="docSerial" type="text" name="docSerial" data-mask="pasportSerials" pattern="[0-9]{2} [0-9]{2}" required>
+                        <label class="custom-label" for="docSerial">Серия</label>
+                        <div class="invalid-tooltip">Поле обязательно для заполнения</div>
+                      </div>
+                    </div>
+                    <div class="form-group col-sm-6 col-md-3">
+                      <div class="custom-field">
+                        <input class="custom-input form-control" id="docNumber" type="text" name="docNumber" data-mask="pasportNumbers" pattern="[0-9]{3} [0-9]{3}" required>
+                        <label class="custom-label" for="docNumber">Номер</label>
+                        <div class="invalid-tooltip">Поле обязательно для заполнения</div>
+                      </div>
+                    </div>
+                    <div class="form-group col-sm-6 col-md-3">
+                      <div class="custom-field">
+                        <input class="custom-input form-control" id="docGovorgDate" type="text" name="docGovorgDate" data-mask="date" autocomplete="off"required>
+                        <label class="custom-label" for="docGovorgDate">Дата выдачи</label>
+                        <div class="invalid-tooltip">Поле обязательно для заполнения</div>
+                      </div>
+                    </div>
+                    <div class="form-group col-sm-6 col-md-4">
+                      <div class="custom-field">
+                        <input class="custom-input form-control" id="docGovorgCode" type="text" name="docGovorgCode" data-mask="pasportCode" pattern="[0-9]{3}[\-][0-9]{3}" required>
+                        <label class="custom-label" for="docGovorgCode">Код подразделения</label>
+                        <div class="invalid-tooltip">Поле обязательно для заполнения</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="custom-field">
+                      <input class="custom-input form-control" id="docGovorgName" type="text" name="docGovorgName" pattern=".*\S.*" required>
+                      <label class="custom-label" for="docGovorgName">Кем выдан</label>
+                      <div class="invalid-tooltip">Поле обязательно для заполнения</div>
+                    </div>
+                  </div>
+                  <div class="form-row">
+                    <div class="form-group col-sm-6">
+                      <div class="custom-field">
+                        <input class="custom-input form-control" id="citizenship" type="text" name="citizenship" pattern=".*\S.*" required>
+                        <label class="custom-label" for="citizenship">Гражданство</label>
+                        <div class="invalid-tooltip">Поле обязательно для заполнения</div>
+                      </div>
+                    </div>
+                    <div class="form-group col-sm-6">
+                      <div class="custom-field">
+                        <input class="custom-input form-control" id="birthPlace" type="text" name="birthPlace" pattern=".*\S.*" required>
+                        <label class="custom-label" for="birthPlace">Место рождения</label>
+                        <div class="invalid-tooltip">Поле обязательно для заполнения</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </fieldset>
+            <hr>
+            <fieldset class="my-5">
+              <div class="row align-items-center mb-5">
+                <div class="col-lg-1">
+                  <span class="h1 font-weight-light">3</span>
+                </div>
+                <div class="col-lg-10">
+                  <legend class="mb-0">Ваше место жительства</legend>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-10 offset-lg-1">
+                  <div class="form-group">
+                    <div class="custom-field">
+                      <input class="custom-input form-control" id="domicile" type="text" name="domicile" pattern=".*\S.*" required>
+                      <label class="custom-label" for="domicile">Укажите адрес полностью</label>
+                      <div class="invalid-tooltip">Поле обязательно для заполнения</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </fieldset>
+            <hr>
+            <fieldset class="my-5">
+              <div class="row">
+                <div class="col-lg-10 offset-lg-1 text-right">
+                  <button class="btn btn-primary" type="submit">Отправить</button>
+                </div>
+              </div>
+            </fieldset>
+          </form>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!--================ Footer =================-->
+  @@include('partials/_footer.html')
+  <!--================ /Footer =================-->
+
+  <script src="libs/jquery-3.4.1.slim.min.js"></script>
+  <script src="libs/bootstrap.bundle.min.js"></script>
+  <script src="libs/vanillaTextMask.js"></script>
+  <script src="libs/flatpickr/flatpickr.min.js"></script>
+  <script src="libs/flatpickr/ru.js"></script>
+  <script src="js/scripts.js"></script>
+  <script>
+    (function() {
+      'use strict';
+      window.addEventListener('load', function() {
+        var forms = document.querySelectorAll('.needs-validation');
+
+        Array.prototype.filter.call(forms, function(form) {
+
+          form.addEventListener('change', function(evt) {
+            var target = evt.target;
+            var value = target.value;
+
+            if ( value && value.replace(/^\s+|\s+$/g, '') ) {
+              target.classList.add('has-value');
+            } else {
+              target.classList.remove('has-value');
+            }
+          }, false);
+
+          // Валидация формы
+          form.addEventListener('submit', function(evt) {
+            if (form.checkValidity() === false) {
+              evt.preventDefault();
+              evt.stopPropagation();
+            }
+            form.classList.add('was-validated');
+          }, false);
+        });
+
+        // Маски для полей ввода
+        var maskedInputs = document.querySelectorAll('[data-mask]');
+        var maskTypeMap = {
+          date: [/\d/, /\d/, '.', /\d/, /\d/, '.', /\d/, /\d/, /\d/, /\d/],
+          tel: ['+', '7', ' ', '(', /\d/, /\d/, /\d/, ')', ' ', /\d/, /\d/, /\d/, '-', /\d/, /\d/, '-', /\d/, /\d/],
+          snils: [/\d/, /\d/, /\d/, '-', /\d/, /\d/, /\d/, '-', /\d/, /\d/, /\d/, ' ', /\d/, /\d/],
+          pasportSerials: [/\d/, /\d/, ' ', /\d/, /\d/],
+          pasportNumbers: [/\d/, /\d/, /\d/, ' ', /\d/, /\d/, /\d/],
+          pasportCode: [/\d/, /\d/, /\d/, '-', /\d/, /\d/, /\d/],
+        };
+
+        Array.prototype.filter.call(maskedInputs, function(it) {
+          vanillaTextMask.maskInput({
+            inputElement: it,
+            mask: maskTypeMap[it.dataset.mask]
+          });
+        });
+
+        // Выпадающие календари
+        flatpickr('[data-mask="date"]', {
+          dateFormat: 'd.m.Y',
+          allowInput: true,
+          'locale': 'ru',
+          onClose: function () {
+            this.setDate(this.input.value);
+          }
+        });
+      }, false);
+    })();
+
+  </script>
+</body>
+</html>

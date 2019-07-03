@@ -1,0 +1,9 @@
+// Личный кабинет
+.avatar-preview {
+  cursor: pointer;
+
+  img {
+    object-fit: cover;
+    border-radius: $border-radius-lg;
+  }
+}

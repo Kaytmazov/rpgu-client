@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Регистрация рождения | РПГУ - Региональный Портал Государственных Услуг</title>
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+  <!--================ Header =================-->
+  @@include('partials/_header.html', {
+    "catalog": "active",
+    "organizations": ""
+  })
+  <!--================ /Header =================-->
+
+  <nav class="breadcrumb-wrapper" aria-label="breadcrumb">
+    <div class="container">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+        <li class="breadcrumb-item"><a href="catalog.html">Каталог услуг</a></li>
+        <li class="breadcrumb-item"><a href="catalog-item.html">Семья и дети</a></li>
+        <li class="breadcrumb-item active" aria-current="page"><span>Регистрация рождения</span></li>
+      </ol>
+    </div>
+  </nav>
+
+  <main class="main-content">
+
+    <div class="container">
+
+      <h1 class="page-title">
+        <svg class="mr-3" width="70" height="70"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#2"></use></svg>
+        Регистрация рождения
+      </h1>
+
+      <div class="row">
+        <div class="col-lg-9">
+          <h2 class="font-weight-light mb-5">Описание услуги</h2>
+          <div class="accordion mb-5" id="serviceDescAccordion">
+            <div class="accordion-item">
+              <div class="accordion-item-header" id="serviceDescHeading1">
+                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#serviceDescCollapse1" aria-expanded="true" aria-controls="serviceDescCollapse1">
+                  Как получить услугу
+                </button>
+              </div>
+              <div id="serviceDescCollapse1" class="collapse show" aria-labelledby="serviceDescHeading1" data-parent="#serviceDescAccordion">
+                <div class="accordion-item-body">
+                  <b>Способы подачи заявки:</b>
+                  <ul class="mt-2">
+                    <li>Лично</li>
+                    <li>Через законного представителя</li>
+                  </ul>
+
+                  <b>Способы получения результата:</b>
+                  <ul class="mt-2">
+                    <li>Лично</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <div class="accordion-item-header" id="serviceDescHeading2">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#serviceDescCollapse2" aria-expanded="false" aria-controls="serviceDescCollapse2">
+                  Стоимость и порядок оплаты
+                </button>
+              </div>
+              <div id="serviceDescCollapse2" class="collapse" aria-labelledby="serviceDescHeading2" data-parent="#serviceDescAccordion">
+                <div class="accordion-item-body">
+                  <p>Услуга предоставляется бесплатно</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <div class="accordion-item-header" id="serviceDescHeading3">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#serviceDescCollapse3" aria-expanded="false" aria-controls="serviceDescCollapse3">
+                  Сроки оказания услуги
+                </button>
+              </div>
+              <div id="serviceDescCollapse3" class="collapse" aria-labelledby="serviceDescHeading3" data-parent="#serviceDescAccordion">
+                <div class="accordion-item-body">
+                  <b>Срок выполнения услуги:</b>
+                  <p>Государственная услуга по регистрации рождения оказывается в день обращения с заявлением о рождении.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <div class="accordion-item-header" id="serviceDescHeading4">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#serviceDescCollapse4" aria-expanded="false" aria-controls="serviceDescCollapse4">
+                  Категории получателей
+                </button>
+              </div>
+              <div id="serviceDescCollapse4" class="collapse" aria-labelledby="serviceDescHeading4" data-parent="#serviceDescAccordion">
+                <div class="accordion-item-body">
+                  <b>Физические лица</b>
+                  <p>Государственная услуга предоставляется: гражданам Российской Федерации, иностранным гражданам, лицам без гражданства, лицам, гражданство которых не определено.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <div class="accordion-item-header" id="serviceDescHeading5">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#serviceDescCollapse5" aria-expanded="false" aria-controls="serviceDescCollapse5">
+                  Основания для оказания услуги, основания для отказа
+                </button>
+              </div>
+              <div id="serviceDescCollapse5" class="collapse" aria-labelledby="serviceDescHeading5" data-parent="#serviceDescAccordion">
+                <div class="accordion-item-body">
+                  <h5>Основание для оказания услуги:</h5>
+                  <p>Письменное или устное заявление родителей.</p>
+
+                  <h5>Основание для отказа:</h5>
+                  <ul>
+                    <li>государственная регистрация акта гражданского состояния противоречит законодательству Российской Федерации;</li>
+                    <li>представленные документы не соответствуют требованиям, предъявляемым к ним законодательством Российской Федерации</li>
+                    <li>если заявители обратились в орган записи актов гражданского состояния не по месту своего жительства и не по месту нахождения медицинского учреждения, где проходили роды.</li>
+                    <li>государственная регистрация рождения уже произведена, в том числе компетентными органами иностранных государств</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <div class="accordion-item-header" id="serviceDescHeading6">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#serviceDescCollapse6" aria-expanded="false" aria-controls="serviceDescCollapse6">
+                  Результат оказания услуги
+                </button>
+              </div>
+              <div id="serviceDescCollapse6" class="collapse" aria-labelledby="serviceDescHeading6" data-parent="#serviceDescAccordion">
+                <div class="accordion-item-body">
+                  <p>В результате предоставления государственной  услуги гражданин получает:</p>
+                  <ul>
+                    <li>свидетельство о рождении и другие предусмотренные законодательством документы (справки о рождении);</li>
+                    <li>извещение об отказе в  государственной регистрации рождения</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <div class="accordion-item-header" id="serviceDescHeading7">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#serviceDescCollapse7" aria-expanded="false" aria-controls="serviceDescCollapse7">
+                  Контакты
+                </button>
+              </div>
+              <div id="serviceDescCollapse7" class="collapse" aria-labelledby="serviceDescHeading7" data-parent="#serviceDescAccordion">
+                <div class="accordion-item-body">
+                  <div class="table-responsive">
+                    <table class="table table-borderless w-auto">
+                      <tbody>
+                        <tr>
+                          <th class="pl-0" scope="row">Руководитель:</th>
+                          <td>Гасанов Арсен Магомедович</td>
+                        </tr>
+                        <tr>
+                          <th class="pl-0" scope="row">Телефон:</th>
+                          <td><a href="tel:8 (8722) 55-49-64" target="_top">8 (8722) 55-49-64</a></td>
+                        </tr>
+                        <tr>
+                          <th class="pl-0" scope="row">Веб-сайт:</th>
+                          <td><a href="http://minyustrd.ru/" target="_blank">www.minyustrd.ru</a></td>
+                        </tr>
+                        <tr>
+                          <th class="pl-0" scope="row">Электронная почта:</th>
+                          <td><a href="mailto:minustrd@e-dag.ru" target="_top">minustrd@e-dag.ru</a></td>
+                        </tr>
+                        <tr>
+                          <th class="pl-0" scope="row">Режим работы:</th>
+                          <td>Понедельник-пятница, с 9-00 до 18-00. Перерыв с 13-00 до 14-00</td>
+                        </tr>
+                        <tr>
+                          <th class="pl-0" scope="row">Время работы экспедиции:</th>
+                          <td>--</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <h2 class="font-weight-light mb-5">Документы</h2>
+          <div class="accordion mb-5" id="serviceDocsAccordion">
+            <div class="accordion-item">
+              <div class="accordion-item-header" id="serviceDocsHeading1">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#serviceDocsCollapse1" aria-expanded="false" aria-controls="serviceDocsCollapse1">
+                  Документы, необходимые для получения услуги
+                </button>
+              </div>
+              <div id="serviceDocsCollapse1" class="collapse" aria-labelledby="serviceDocsHeading1" data-parent="#serviceDocsAccordion">
+                <div class="accordion-item-body">
+                  <p>Услуга предоставляется бесплатно</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <div class="accordion-item-header" id="serviceDocsHeading2">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#serviceDocsCollapse2" aria-expanded="false" aria-controls="serviceDocsCollapse2">
+                  Документы, предоставляемые по завершении оказания услуги
+                </button>
+              </div>
+              <div id="serviceDocsCollapse2" class="collapse" aria-labelledby="serviceDocsHeading2" data-parent="#serviceDocsAccordion">
+                <div class="accordion-item-body">
+                  <p>Услуга предоставляется бесплатно</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg text-right">
+          <a class="btn btn-primary" href="service-get.html">Получить услугу</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!--================ Footer =================-->
+  @@include('partials/_footer.html')
+  <!--================ /Footer =================-->
+
+  <script src="libs/jquery-3.4.1.slim.min.js"></script>
+  <script src="libs/bootstrap.bundle.min.js"></script>
+  <script src="js/scripts.js"></script>
+</body>
+</html>

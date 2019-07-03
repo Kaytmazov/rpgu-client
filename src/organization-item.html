@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Министерство юстиции Республики Дагестан | РПГУ - Региональный Портал Государственных Услуг</title>
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+  <!--================ Header =================-->
+  @@include('partials/_header.html', {
+    "catalog": "active",
+    "organizations": ""
+  })
+  <!--================ /Header =================-->
+
+  <nav class="breadcrumb-wrapper" aria-label="breadcrumb">
+    <div class="container">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+        <li class="breadcrumb-item"><a href="organizations.html">Органы власти</a></li>
+        <li class="breadcrumb-item active" aria-current="page"><span>Министерство юстиции Республики Дагестан</span></li>
+      </ol>
+    </div>
+  </nav>
+
+  <main class="main-content">
+
+    <div class="container">
+
+      <h1 class="page-title">
+        <svg class="mr-3" width="70" height="70"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#emblem-rd"></use></svg>
+        Министерство юстиции Республики Дагестан
+      </h1>
+
+      <ul class="nav nav-tabs" role="tablist">
+        <li class="nav-item">
+          <a class="nav-link active" id="info-tab" data-toggle="tab" href="#info" role="tab" aria-controls="info" aria-selected="true">Информация и контакты</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="services-tab" data-toggle="tab" href="#services" role="tab" aria-controls="services" aria-selected="false">Все услуги (8)</a>
+        </li>
+      </ul>
+      <div class="tab-content">
+        <div class="tab-pane fade show active" id="info" role="tabpanel" aria-labelledby="info-tab">
+          <h4 class="mb-4">Общая информация</h4>
+          <div class="table-responsive">
+            <table class="table table-borderless w-auto">
+              <tbody>
+                <tr>
+                  <th class="pl-0" scope="row">Руководитель:</th>
+                  <td>Гасанов Арсен Магомедович</td>
+                </tr>
+                <tr>
+                  <th class="pl-0" scope="row">Телефон:</th>
+                  <td><a href="tel:8 (8722) 55-49-64" target="_top">8 (8722) 55-49-64</a></td>
+                </tr>
+                <tr>
+                  <th class="pl-0" scope="row">Веб-сайт:</th>
+                  <td><a href="http://minyustrd.ru/" target="_blank">www.minyustrd.ru</a></td>
+                </tr>
+                <tr>
+                  <th class="pl-0" scope="row">Электронная почта:</th>
+                  <td><a href="mailto:minustrd@e-dag.ru" target="_top">minustrd@e-dag.ru</a></td>
+                </tr>
+                <tr>
+                  <th class="pl-0" scope="row">Режим работы:</th>
+                  <td>Понедельник-пятница, с 9-00 до 18-00. Перерыв с 13-00 до 14-00</td>
+                </tr>
+                <tr>
+                  <th class="pl-0" scope="row">Время работы экспедиции:</th>
+                  <td>--</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <hr>
+
+          <h4 class="my-4">Места обращения</h4>
+          <div class="embed-responsive embed-responsive-21by9">
+            <iframe src="https://yandex.ru/map-widget/v1/-/CCc1ZG-Y" frameborder="1" allowfullscreen="true"></iframe>
+          </div>
+        </div>
+
+        <div class="tab-pane fade" id="services" role="tabpanel" aria-labelledby="services-tab">
+          <div class="row">
+            <div class="col-lg-9">
+              <div class="input-group mb-5">
+                <input type="text" class="form-control" placeholder="Введите название услуги" aria-label="Поиск услуг" aria-describedby="button-addon2">
+                <div class="input-group-append">
+                  <button class="btn btn-primary" type="button" id="button-addon2">
+                    <svg width="20" height="20"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-search"></use></svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ul class="service-list">
+            <li>
+              <a class="service-list-item" href="service-item.html">
+                <svg class="service-item-icon" width="26" height="26"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-service-arrow"></use></svg>
+                <span class="service-item-title">Регистрация брака</span>
+              </a>
+            </li>
+            <li>
+              <a class="service-list-item" href="service-item.html">
+                <svg class="service-item-icon" width="26" height="26"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-service-arrow"></use></svg>
+                <span class="service-item-title">Регистрация рождения</span>
+              </a>
+            </li>
+            <li>
+              <a class="service-list-item" href="service-item.html">
+                <svg class="service-item-icon" width="26" height="26"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-service-arrow"></use></svg>
+                <span class="service-item-title">Регистрация смерти</span>
+              </a>
+            </li>
+            <li>
+              <a class="service-list-item" href="service-item.html">
+                <svg class="service-item-icon" width="26" height="26"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-service-arrow"></use></svg>
+                <span class="service-item-title">Регистрация усыновления (удочерения)</span>
+              </a>
+            </li>
+            <li>
+              <a class="service-list-item" href="service-item.html">
+                <svg class="service-item-icon" width="26" height="26"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-service-arrow"></use></svg>
+                <span class="service-item-title">Регистрация расторжения брака</span>
+              </a>
+            </li>
+            <li>
+              <a class="service-list-item" href="service-item.html">
+                <svg class="service-item-icon" width="26" height="26"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-service-arrow"></use></svg>
+                <span class="service-item-title">Выдача повторных свидетельств о государственной регистрации актов гражданского состояния и форменных справок, подтверждающих факт государственной регистрации актов гражданского состояния</span>
+              </a>
+            </li>
+            <li>
+              <a class="service-list-item" href="service-item.html">
+                <svg class="service-item-icon" width="26" height="26"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-service-arrow"></use></svg>
+                <span class="service-item-title">Государственная регистрация установления отцовства</span>
+              </a>
+            </li>
+            <li>
+              <a class="service-list-item" href="service-item.html">
+                <svg class="service-item-icon" width="26" height="26"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-service-arrow"></use></svg>
+                <span class="service-item-title">Предоставление адресно-справочной информации</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+
+  <!--================ Footer =================-->
+  @@include('partials/_footer.html')
+  <!--================ /Footer =================-->
+
+  <script src="libs/jquery-3.4.1.slim.min.js"></script>
+  <script src="libs/bootstrap.bundle.min.js"></script>
+  <script src="js/scripts.js"></script>
+</body>
+</html>

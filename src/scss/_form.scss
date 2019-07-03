@@ -1,0 +1,161 @@
+// Custom Fields
+
+.custom-field {
+  position: relative;
+
+  .custom-label {
+    position: absolute;
+    left: 16px;
+    top: 13px;
+    z-index: 1;
+    width: calc(100% - 28px);
+    margin-bottom: 0;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    font-size: 16px;
+    line-height: 1;
+    color: $input-placeholder-color;
+    transform-origin: left top;
+    transition: transform .15s cubic-bezier(.4,0,.2,1),
+                color .15s cubic-bezier(.4,0,.2,1);
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: text;
+    overflow: hidden;
+    will-change: transform;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .custom-input {
+    padding: 22px 16px 6px;
+    border-radius: 0;
+
+    &:focus,
+    &.has-value {
+      & ~ .custom-label {
+        width: 100%;
+        transform: translateY(-32%) scale(.70);
+      }
+    }
+
+    &:disabled {
+      cursor: not-allowed;
+
+      & ~ .custom-label {
+        cursor: not-allowed;
+      }
+    }
+  }
+
+  textarea.custom-input {
+    height: auto;
+    min-height: 100px;
+
+    & + .custom-label {
+      top: 10px;
+      background-color: #ffffff;
+    }
+  }
+}
+
+
+.gender-radios {
+  display: flex;
+  align-items: center;
+
+  .radio {
+    margin-right: 35px;
+  }
+
+  input {
+    position: relative;
+    margin-right: 6px;
+    border: none;
+    background-color: transparent;
+    vertical-align: middle;
+    appearance: none;
+    cursor: pointer;
+
+    &::before,
+    &::after {
+      content: '';
+      display: block;
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      transition: 240ms;
+    }
+
+    &::before {
+      position: absolute;
+      left: 0;
+      top: 0;
+      background-color: #6CA9D2;
+      transform: scale(0);
+    }
+
+    &::after {
+      position: relative;
+      top: 0;
+      border: 2px solid $input-border-color;
+    }
+
+    &:focus {
+      outline: none;
+    }
+
+    &:checked {
+      &::before {
+        transform: scale(0.4);
+      }
+
+      &::after {
+        border-color: #6CA9D2;
+      }
+
+      + label svg {
+        fill: #6CA9D2;
+      }
+    }
+
+    &:disabled {
+      pointer-events: none;
+
+      &:checked {
+        &::before {
+          background-color: #e9ecf1;
+        }
+
+        &::after {
+          border-color: #e9ecf1;
+        }
+      }
+
+      + label svg {
+        fill: #e9ecf1;
+      }
+    }
+  }
+
+  label {
+    margin-bottom: 0;
+    cursor: pointer;
+  }
+
+  svg {
+    margin-right: 6px;
+    vertical-align: middle;
+    fill: $input-border-color;
+  }
+}
+
+.was-validated .form-control:invalid {
+  & ~ .invalid-tooltip {
+    display: none;
+  }
+
+  &:hover ~ .invalid-tooltip {
+    display: block;
+  }
+}

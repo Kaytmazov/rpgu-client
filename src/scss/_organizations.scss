@@ -1,0 +1,18 @@
+// Органы власти
+.organization-list {
+  padding-left: 0;
+  list-style: none;
+
+  li {
+    margin-bottom: 30px;
+  }
+
+  &-item {
+    display: inline-flex;
+    align-items: center;
+  }
+
+  .organization-item-emblem {
+    margin-right: 20px;
+  }
+}

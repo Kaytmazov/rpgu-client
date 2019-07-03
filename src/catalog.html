@@ -12,19 +12,20 @@
   <!--================ Header =================-->
   @@include('partials/_header.html', {
     "catalog": "active",
-    "oiv": ""
+    "organizations": ""
   })
   <!--================ /Header =================-->
-  <main>
-    <nav class="breadcrumb-wrapper" aria-label="breadcrumb">
-      <div class="container">
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
-          <li class="breadcrumb-item active" aria-current="page"><span>Каталог услуг</span></li>
-        </ol>
-      </div>
-    </nav>
 
+  <nav class="breadcrumb-wrapper" aria-label="breadcrumb">
+    <div class="container">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+        <li class="breadcrumb-item active" aria-current="page"><span>Каталог услуг</span></li>
+      </ol>
+    </div>
+  </nav>
+
+  <main class="main-content">
     <div class="container">
 
       <h1 class="page-title">Каталог услуг</h1>
@@ -48,12 +49,12 @@
               <span class="catalog-item-title">Семья и дети</span>
             </a>
             <div class="catalog-item-services">
-              <a href="service.html">Регистрация брака,</a>
-              <a href="service.html">Регистрация рождения,</a>
-              <a href="service.html">Распоряжение материнским капиталом,</a>
-              <a href="service.html">Создание семьи,</a>
-              <a href="service.html">Рождение ребёнка</a>
-              <a href="service.html">Еще...</a>
+              <a href="service-item.html">Регистрация брака,</a>
+              <a href="service-item.html">Регистрация рождения,</a>
+              <a href="service-item.html">Распоряжение материнским капиталом,</a>
+              <a href="service-item.html">Создание семьи,</a>
+              <a href="service-item.html">Рождение ребёнка</a>
+              <a href="service-item.html">Еще...</a>
             </div>
           </div>
         </div>
@@ -65,12 +66,12 @@
               <span class="catalog-item-title">Паспорта, регистрации, визы</span>
             </a>
             <div class="catalog-item-services">
-              <a href="service.html">Паспорт гражданина РФ,</a>
-              <a href="service.html">Заграничный паспорт нового образца,</a>
-              <a href="service.html">Регистрация граждан,</a>
-              <a href="service.html">Ваши документы утеряны или украдены,?</a>
-              <a href="service.html">Создание семьи</a>
-              <a href="service.html">Еще...</a>
+              <a href="service-item.html">Паспорт гражданина РФ,</a>
+              <a href="service-item.html">Заграничный паспорт нового образца,</a>
+              <a href="service-item.html">Регистрация граждан,</a>
+              <a href="service-item.html">Ваши документы утеряны или украдены,?</a>
+              <a href="service-item.html">Создание семьи</a>
+              <a href="service-item.html">Еще...</a>
             </div>
           </div>
         </div>
@@ -82,13 +83,13 @@
               <span class="catalog-item-title">Транспорт и вождение</span>
             </a>
             <div class="catalog-item-services">
-              <a href="service.html">Автомобильные и дорожные штрафы,</a>
-              <a href="service.html">Водительское удостоверение,</a>
-              <a href="service.html">Регистрация транспортного средства,</a>
-              <a href="service.html">Покупка и оформление автомобиля,</a>
-              <a href="service.html">Продажа автомобиля салону или частному лицу,</a>
-              <a href="service.html">Содержание автомобиля</a>
-              <a href="service.html">Еще...</a>
+              <a href="service-item.html">Автомобильные и дорожные штрафы,</a>
+              <a href="service-item.html">Водительское удостоверение,</a>
+              <a href="service-item.html">Регистрация транспортного средства,</a>
+              <a href="service-item.html">Покупка и оформление автомобиля,</a>
+              <a href="service-item.html">Продажа автомобиля салону или частному лицу,</a>
+              <a href="service-item.html">Содержание автомобиля</a>
+              <a href="service-item.html">Еще...</a>
             </div>
           </div>
         </div>
@@ -100,12 +101,12 @@
               <span class="catalog-item-title">Образование</span>
             </a>
             <div class="catalog-item-services">
-              <a href="service.html">Запись в детский сад,</a>
-              <a href="service.html">Предоставление предварительных результатов ЕГЭ,</a>
-              <a href="service.html">Признание иностранных документов об образовании,</a>
-              <a href="service.html">Получение образования,</a>
-              <a href="service.html">Рождение ребёнка</a>
-              <a href="service.html">Еще...</a>
+              <a href="service-item.html">Запись в детский сад,</a>
+              <a href="service-item.html">Предоставление предварительных результатов ЕГЭ,</a>
+              <a href="service-item.html">Признание иностранных документов об образовании,</a>
+              <a href="service-item.html">Получение образования,</a>
+              <a href="service-item.html">Рождение ребёнка</a>
+              <a href="service-item.html">Еще...</a>
             </div>
           </div>
         </div>
@@ -117,12 +118,12 @@
               <span class="catalog-item-title">Налоги и финансы</span>
             </a>
             <div class="catalog-item-services">
-              <a href="service.html">Налоговая задолженность,</a>
-              <a href="service.html">Налоговый учет физических лиц,</a>
-              <a href="service.html">Прием налоговых деклараций (расчетов),</a>
-              <a href="service.html">Как открыть своё дело,</a>
-              <a href="service.html">Имущественный налоговый вычет</a>
-              <a href="service.html">Еще...</a>
+              <a href="service-item.html">Налоговая задолженность,</a>
+              <a href="service-item.html">Налоговый учет физических лиц,</a>
+              <a href="service-item.html">Прием налоговых деклараций (расчетов),</a>
+              <a href="service-item.html">Как открыть своё дело,</a>
+              <a href="service-item.html">Имущественный налоговый вычет</a>
+              <a href="service-item.html">Еще...</a>
             </div>
           </div>
         </div>
@@ -134,12 +135,12 @@
               <span class="catalog-item-title">Моё здоровье</span>
             </a>
             <div class="catalog-item-services">
-              <a href="service.html">Сведения о прикреплении к медицинской организации,</a>
-              <a href="service.html">Аттестация медицинских работников и фармацевтов,</a>
-              <a href="service.html">Сведения об оказанных медицинских услугах и их стоимости,</a>
-              <a href="service.html">Рождение ребёнка,</a>
-              <a href="service.html">Инвалидность</a>
-              <a href="service.html">Еще...</a>
+              <a href="service-item.html">Сведения о прикреплении к медицинской организации,</a>
+              <a href="service-item.html">Аттестация медицинских работников и фармацевтов,</a>
+              <a href="service-item.html">Сведения об оказанных медицинских услугах и их стоимости,</a>
+              <a href="service-item.html">Рождение ребёнка,</a>
+              <a href="service-item.html">Инвалидность</a>
+              <a href="service-item.html">Еще...</a>
             </div>
           </div>
         </div>
@@ -151,12 +152,12 @@
               <span class="catalog-item-title">Пенсия, пособия и льготы</span>
             </a>
             <div class="catalog-item-services">
-              <a href="service.html">Извещение о состоянии лицевого счета в ПФР,</a>
-              <a href="service.html">Установление пенсии,</a>
-              <a href="service.html">Выписка о предоставлении социальной помощи,</a>
-              <a href="service.html">Пособия, выплаты и льготы семьям, имеющим детей,</a>
-              <a href="service.html">Помощь пенсионерам</a>
-              <a href="service.html">Еще...</a>
+              <a href="service-item.html">Извещение о состоянии лицевого счета в ПФР,</a>
+              <a href="service-item.html">Установление пенсии,</a>
+              <a href="service-item.html">Выписка о предоставлении социальной помощи,</a>
+              <a href="service-item.html">Пособия, выплаты и льготы семьям, имеющим детей,</a>
+              <a href="service-item.html">Помощь пенсионерам</a>
+              <a href="service-item.html">Еще...</a>
             </div>
           </div>
         </div>
@@ -168,12 +169,12 @@
               <span class="catalog-item-title">Лицензии, справки, аккредитации</span>
             </a>
             <div class="catalog-item-services">
-              <a href="service.html">Справка об отсутствии судимости,</a>
-              <a href="service.html">Архивные справки МВД,</a>
-              <a href="service.html">Справка об административном наказании за потребление наркотических средств без назначения врача,</a>
-              <a href="service.html">Ваши документы утеряны или украдены?,</a>
-              <a href="service.html">Поиск работы и трудоустройство</a>
-              <a href="service.html">Еще...</a>
+              <a href="service-item.html">Справка об отсутствии судимости,</a>
+              <a href="service-item.html">Архивные справки МВД,</a>
+              <a href="service-item.html">Справка об административном наказании за потребление наркотических средств без назначения врача,</a>
+              <a href="service-item.html">Ваши документы утеряны или украдены?,</a>
+              <a href="service-item.html">Поиск работы и трудоустройство</a>
+              <a href="service-item.html">Еще...</a>
             </div>
           </div>
         </div>
@@ -185,12 +186,12 @@
               <span class="catalog-item-title">Квартира, строительство и земля</span>
             </a>
             <div class="catalog-item-services">
-              <a href="service.html">Оплата ЖКХ,</a>
-              <a href="service.html">Разрешение на строительство,</a>
-              <a href="service.html">Смена категории жилья,</a>
-              <a href="service.html">Приобретение жилой недвижимости,</a>
-              <a href="service.html">Помощь пенсионерам</a>
-              <a href="service.html">Еще...</a>
+              <a href="service-item.html">Оплата ЖКХ,</a>
+              <a href="service-item.html">Разрешение на строительство,</a>
+              <a href="service-item.html">Смена категории жилья,</a>
+              <a href="service-item.html">Приобретение жилой недвижимости,</a>
+              <a href="service-item.html">Помощь пенсионерам</a>
+              <a href="service-item.html">Еще...</a>
             </div>
           </div>
         </div>

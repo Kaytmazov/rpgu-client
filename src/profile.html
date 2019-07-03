@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Личный кабинет | РПГУ - Региональный Портал Государственных Услуг</title>
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+  <!--================ Header =================-->
+  @@include('partials/_header.html', {
+    "catalog": "active",
+    "organizations": ""
+  })
+  <!--================ /Header =================-->
+
+  <nav class="breadcrumb-wrapper" aria-label="breadcrumb">
+    <div class="container">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+        <li class="breadcrumb-item active" aria-current="page"><span>Личный кабинет</span></li>
+      </ol>
+    </div>
+  </nav>
+
+  <main class="main-content">
+    <div class="container">
+      <div class="row">
+        <div class="col-auto">
+          <input class="avatar-input sr-only" id="avatar" type="file" name="avatar">
+          <label class="avatar-preview" for="avatar">
+            <img src="img/icons/icon-avatar.svg" width="80" height="80" alt="">
+          </label>
+        </div>
+        <div class="col-auto">
+          <h4 class="mb-3">Кайтмазов Шамиль Магомедович</h4>
+          <div class="row mb-4">
+            <div class="col">
+              <span class="d-block mb-1 text-muted">Паспорт</span>
+              <span class="text-nowrap">8211 034364</span>
+            </div>
+            <div class="col">
+              <span class="d-block mb-1 text-muted">СНИЛС</span>
+              <span class="text-nowrap">147-456-124 73</span>
+            </div>
+            <div class="col">
+              <span class="d-block mb-1 text-muted">ИНН</span>
+              <span class="text-nowrap">053602184507</span>
+            </div>
+          </div>
+          <a href="#">Мои данные и контакты</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!--================ Footer =================-->
+  @@include('partials/_footer.html')
+  <!--================ /Footer =================-->
+
+  <script src="libs/jquery-3.4.1.slim.min.js"></script>
+  <script src="libs/bootstrap.bundle.min.js"></script>
+  <script src="js/scripts.js"></script>
+  <script>
+    'use strict';
+
+    (function () {
+      var FILE_TYPES = ['jpg', 'jpeg', 'png'];
+
+      var avatarInput = document.querySelector('.avatar-input');
+      var preview = document.querySelector('.avatar-preview img');
+
+      avatarInput.addEventListener('change', function () {
+        var file = avatarInput.files[0];
+        var fileName = file.name.toLowerCase();
+
+        var matches = FILE_TYPES.some(function (it) {
+          return fileName.endsWith(it);
+        });
+
+        if (matches) {
+          var reader = new FileReader();
+
+          reader.addEventListener('load', function () {
+            preview.src = reader.result;
+          });
+
+          reader.readAsDataURL(file);
+        }
+      });
+    })();
+  </script>
+</body>
+</html>
