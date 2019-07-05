@@ -32,7 +32,6 @@ function clean() {
 function copy() {
   return src([
     folder.src + 'fonts/**/*.{woff,woff2}',
-    folder.src + '*.html',
     folder.src + 'libs/**'
   ], {
     base: folder.src
@@ -141,7 +140,7 @@ function svgMin() {
     .pipe(dest(folder.dist + 'img/icons'));
 }
 
-const build = series(clean, copy, parallel(css, js, copyAssets, images, svgSprite, svgMin));
+const build = series(clean, copy, parallel(html, css, js, copyAssets, images, svgSprite, svgMin));
 
 exports.images = images;
 exports.svgSprite = svgSprite;

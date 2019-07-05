@@ -1,9 +1,99 @@
 // Личный кабинет
-.avatar-preview {
-  cursor: pointer;
+.profile-info {
+  margin-bottom: 50px;
+}
 
-  img {
-    object-fit: cover;
-    border-radius: $border-radius-lg;
+.table-mycases {
+  tr {
+    &:first-of-type td {
+      border-top: 0;
+    }
+
+    &:last-of-type td {
+      border-bottom: $table-border-width solid $table-border-color;
+    }
+  }
+
+  td {
+    vertical-align: middle;
+
+    &:first-of-type {
+      width: 1px;
+    }
+
+    &:last-of-type {
+      font-size: $small-font-size;
+      text-align: right;
+      white-space: nowrap;
+      color: $text-muted;
+    }
+  }
+}
+
+.mydocs-list-wrapper {
+  padding: 50px;
+  background-color: #f1f3f6;
+}
+
+.mydocs-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -8px;
+  margin-left: -8px;
+
+  &-item {
+    position: relative;
+    flex: 0 0 33.33333%;
+    width: 100%;
+    max-width: 33.33333%;
+    padding-right: 8px;
+    padding-left: 8px;
+    margin-bottom: 16px;
+  }
+}
+
+.mydoc-card {
+  position: relative;
+  height: 214px;
+  padding: 24px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 16px rgba(180, 180, 180, .3);
+  border-radius: $border-radius;
+  overflow: hidden;
+
+  .mydoc-title {
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-weight: 600;
+  }
+}
+
+a.mydoc-card {
+  display: block;
+  color: $body-color;
+  transition: transform .3s,
+              box-shadow .3s;
+
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: 40px;
+    background: linear-gradient(to bottom,rgba(255,255,255,0),rgba(255,255,255,.9),#fff);
+  }
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+    background-color: #f5f5f5;
+    box-shadow: 0 8px 20px rgba(180, 180, 180, .6);
+    transform: translateY(-8px);
+
+    &::after {
+      background: linear-gradient(to bottom,rgba(245,245,245,0),rgba(245,245,245,.9),#f5f5f5)
+    }
   }
 }

@@ -15,30 +15,11 @@
     outline: none;
   }
 
-  &-eye {
-    width: 15px;
-    height: 10px;
-    background-image: url(../img/icons/icon-eye.svg);
-  }
-
-  &-location {
-    width: 11px;
-    height: 15px;
-    background-image: url(../img/icons/icon-location.svg);
-  }
-
   &-search {
     width: 16px;
     height: 16px;
     vertical-align: text-bottom;
     background-image: url(../img/icons/icon-search.svg);
-  }
-
-  &-lk {
-    width: 14px;
-    height: 8px;
-    vertical-align: text-bottom;
-    background-image: url(../img/icons/icon-lk.svg);
   }
 }
 
@@ -47,6 +28,10 @@
   .icon {
     margin-right: 8px;
     vertical-align: middle;
+  }
+
+  svg {
+    margin-right: 8px;
   }
 
   span {

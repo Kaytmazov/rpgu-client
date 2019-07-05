@@ -27,30 +27,196 @@
 
   <main class="main-content">
     <div class="container">
-      <div class="row">
+      <div class="profile-info row">
         <div class="col-auto">
-          <input class="avatar-input sr-only" id="avatar" type="file" name="avatar">
-          <label class="avatar-preview" for="avatar">
+          <a href="https://esia.gosuslugi.ru/profile/user/settings?Avatar=" target="_blank">
             <img src="img/icons/icon-avatar.svg" width="80" height="80" alt="">
-          </label>
+          </a>
         </div>
         <div class="col-auto">
           <h4 class="mb-3">Кайтмазов Шамиль Магомедович</h4>
           <div class="row mb-4">
-            <div class="col">
-              <span class="d-block mb-1 text-muted">Паспорт</span>
-              <span class="text-nowrap">8211 034364</span>
+            <div class="col key-value">
+              <span class="key">Паспорт</span>
+              <span class="value">8115 034432</span>
             </div>
-            <div class="col">
-              <span class="d-block mb-1 text-muted">СНИЛС</span>
-              <span class="text-nowrap">147-456-124 73</span>
+            <div class="col key-value">
+              <span class="key">СНИЛС</span>
+              <span class="value text-nowrap">147-653-125 43</span>
             </div>
-            <div class="col">
-              <span class="d-block mb-1 text-muted">ИНН</span>
-              <span class="text-nowrap">053602184507</span>
+            <div class="col key-value">
+              <span class="key">ИНН</span>
+              <span class="value">053602176245</span>
             </div>
           </div>
-          <a href="#">Мои данные и контакты</a>
+          <a href="https://lk.gosuslugi.ru/info" target="_blank">Мои данные и контакты</a>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-9">
+          <ul class="nav nav-bordered" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="cases-tab" data-toggle="tab" href="#cases" role="tab" aria-controls="cases" aria-selected="true">Мои обращения</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="notifications-tab" data-toggle="tab" href="#notifications" role="tab" aria-controls="notifications" aria-selected="false">Уведомления</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="documents-tab" data-toggle="tab" href="#documents" role="tab" aria-controls="documents" aria-selected="false">Документы</a>
+            </li>
+          </ul>
+          <div class="tab-content">
+            <div class="tab-pane fade show active" id="cases" role="tabpanel" aria-labelledby="cases-tab">
+              <div class="table-responsive mt-4">
+                <table class="table table-mycases">
+                  <tbody>
+                    <tr>
+                      <td>
+                        <svg width="26" height="26" data-toggle="tooltip" title="Услуга оказана"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-success"></use></svg>
+                      </td>
+                      <td>Получение сведений о состоянии индивидуального лицевого счета</td>
+                      <td>18.05.2019 16:35</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <svg width="26" height="26" data-toggle="tooltip" title="В услуге отказано"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-error"></use></svg>
+                      </td>
+                      <td>Получение права на управление транспортным средством</td>
+                      <td>13.05.2019 10:22</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <svg width="26" height="26" data-toggle="tooltip" title="Услуга оказана"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-success"></use></svg>
+                      </td>
+                      <td>Получение паспорта нового поколения гражданином Российской Федерации, достигшим 18-летнего возраста</td>
+                      <td>04.05.2019 15:11</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <svg width="26" height="26" data-toggle="tooltip" title="Заявление отклонено"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-warning"></use></svg>
+                      </td>
+                      <td>Получение паспорта нового поколения гражданином Российской Федерации, достигшим 18-летнего возраста</td>
+                      <td>01.05.2019 08:59</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <svg width="26" height="26" data-toggle="tooltip" title="Услуга оказана"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-success"></use></svg>
+                      </td>
+                      <td>Подготовка и выдача разрешений на строительство, реконструкцию, капитальный ремонт объектов капитального строительства а так же на ввод объектов в эксплуатацию</td>
+                      <td>25.04.2019 12:24</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <svg width="26" height="26" data-toggle="tooltip" title="Услуга оказана"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-success"></use></svg>
+                      </td>
+                      <td>Консультация по трудовому праву</td>
+                      <td>16.04.2019 18:12</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <svg width="26" height="26" data-toggle="tooltip" title="В услуге отказано"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-error"></use></svg>
+                      </td>
+                      <td>Содействие в поиске работы и сотрудников</td>
+                      <td>11.04.2019 12:45</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <svg width="26" height="26" data-toggle="tooltip" title="Заявление отклонено"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-warning"></use></svg>
+                      </td>
+                      <td>Запись ребёнка в детский сад</td>
+                      <td>09.03.2019 09:12</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="notifications" role="tabpanel" aria-labelledby="notifications-tab">
+              <div class="table-responsive mt-4">
+                <table class="table table-mycases">
+                  <tbody>
+                    <tr>
+                      <td>
+                        <svg width="26" height="26" data-toggle="tooltip" title="Новое сообщение"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-msg-recv"></use></svg>
+                      </td>
+                      <td>
+                        <b class="d-block mb-1">Служба технической поддержки</b>
+                        Спасибо за обращение. Наши специалисты в ближайшее время расмотрят Ваше обращение.</td>
+                      <td>12.01.2019 12:32</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <svg width="26" height="26" data-toggle="tooltip" title="Новое сообщение"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-msg-recv"></use></svg>
+                      </td>
+                      <td>
+                        <b class="d-block mb-1">Портал Госуслуг</b>
+                        Добро пожаловать в ГИС ЖКХ
+                      </td>
+                      <td>25.12.2018 08:26</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="documents" role="tabpanel" aria-labelledby="documents-tab">
+              <div class="mydocs-list-wrapper">
+                <div class="mydocs-list">
+                  <div class="mydocs-list-item">
+                    <a class="mydoc-card" href="#passport_modal" data-toggle="modal">
+                      <h6 class="mydoc-title">Паспорт РФ</h6>
+                      <div class="key-value mb-3">
+                        <div class="key">Серия и номер</div>
+                        <div class="value">8115 034432</div>
+                      </div>
+                      <div class="key-value mb-3">
+                        <div class="key">Дата выдачи</div>
+                        <div class="value">24.12.2010</div>
+                      </div>
+                      <div class="key-value mb-3">
+                        <div class="key">Код подразделения</div>
+                        <div class="value">053012</div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="mydocs-list-item">
+                    <div class="mydoc-card">
+                      <h6 class="mydoc-title">СНИЛС</h6>
+                      <div class="key-value">
+                        <div class="key">Номер</div>
+                        <div class="value">147-653-125 43</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mydocs-list-item">
+                    <div class="mydoc-card">
+                      <h6 class="mydoc-title">ИНН</h6>
+                      <div class="key-value">
+                        <div class="key">Номер</div>
+                        <div class="value">053602176245</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mydocs-list-item">
+                    <a class="mydoc-card" href="#passport_modal" data-toggle="modal">
+                      <h6 class="mydoc-title">Загранпаспорт</h6>
+                      <div class="key-value mb-3">
+                        <div class="key">Серия и номер</div>
+                        <div class="value">72 2749645</div>
+                      </div>
+                      <div class="key-value mb-3">
+                        <div class="key">Дата выдачи</div>
+                        <div class="value">12.05.2018</div>
+                      </div>
+                      <div class="key-value">
+                        <div class="key">Действителен до</div>
+                        <div class="value">12.05.2028</div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -60,37 +226,44 @@
   @@include('partials/_footer.html')
   <!--================ /Footer =================-->
 
+
+  <!--================ Modals =================-->
+  <div class="modal fade" id="passport_modal" tabindex="-1" role="dialog" aria-labelledby="passportModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="passportModalLabel">Паспорт гражданина Российской Федерации</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="row mb-4">
+            <div class="col-auto key-value">
+              <span class="key">Серия и номер</span>
+              <span class="value">8115 034432</span>
+            </div>
+            <div class="col-auto key-value">
+              <span class="key">Дата выдачи</span>
+              <span class="value">24.12.2010</span>
+            </div>
+            <div class="col-auto key-value">
+              <span class="key">Код подразделения</span>
+              <span class="value">053012</span>
+            </div>
+          </div>
+          <div class="key-value mb-3">
+            <span class="key">Кем выдан</span>
+            <span class="value">ТП УФМС РОССИИ ПО РЕСПУБЛИКЕ ДАГЕСТАН В ХУНЗАХСКОМ РАЙОНЕ</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--================ /Modals =================-->
+
   <script src="libs/jquery-3.4.1.slim.min.js"></script>
   <script src="libs/bootstrap.bundle.min.js"></script>
   <script src="js/scripts.js"></script>
-  <script>
-    'use strict';
-
-    (function () {
-      var FILE_TYPES = ['jpg', 'jpeg', 'png'];
-
-      var avatarInput = document.querySelector('.avatar-input');
-      var preview = document.querySelector('.avatar-preview img');
-
-      avatarInput.addEventListener('change', function () {
-        var file = avatarInput.files[0];
-        var fileName = file.name.toLowerCase();
-
-        var matches = FILE_TYPES.some(function (it) {
-          return fileName.endsWith(it);
-        });
-
-        if (matches) {
-          var reader = new FileReader();
-
-          reader.addEventListener('load', function () {
-            preview.src = reader.result;
-          });
-
-          reader.readAsDataURL(file);
-        }
-      });
-    })();
-  </script>
 </body>
 </html>

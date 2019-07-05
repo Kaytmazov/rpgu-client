@@ -17,6 +17,8 @@ $footerBg:                #e6ebec;
 
 $text-muted:              #a5aeb3;
 
+$border-radius-lg:          8px;
+
 
 $navbar-padding-y:          10px;
 $navbar-brand-padding-y:    5px;
@@ -47,3 +49,16 @@ $nav-tabs-border-radius:            0;
 $nav-tabs-border-color:           #cdd1d4;
 $nav-tabs-link-active-border-color: $nav-tabs-border-color $nav-tabs-border-color transparent;
 $nav-tabs-link-hover-border-color:  transparent transparent $nav-tabs-border-color;
+
+$table-cell-padding:                20px 10px;
+$table-cell-padding-sm:             10px;
+
+$tooltip-bg:                      #2c2e3e;
+$tooltip-margin:                    2px;
+$tooltip-padding-y:                 8px;
+$tooltip-padding-x:                 13px;
+
+$modal-header-padding-y:              25px;
+$modal-header-padding-x:              40px;
+$modal-inner-padding:                 30px 40px;
+$modal-content-border-radius:         4px;
